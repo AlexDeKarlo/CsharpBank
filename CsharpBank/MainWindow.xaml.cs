@@ -25,6 +25,10 @@ namespace CsharpBank
         {
             InitializeComponent();
             DataContext = new MainViewModel();
+      
+            
         }
+
+
     }
 }

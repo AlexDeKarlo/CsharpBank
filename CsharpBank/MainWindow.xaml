@@ -5,10 +5,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CsharpBank"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="417" Width="800">
     <Grid>
-        <Canvas x:Name="Registration" HorizontalAlignment="Left" Height="399" Margin="10,10,0,0" VerticalAlignment="Top" Width="772">
-            <Button Content="Button" Canvas.Left="334" Canvas.Top="187" Width="75" Command="{Binding ButtonPressedCommand}"/>
+        <Canvas x:Name="Registration" HorizontalAlignment="Left" Height="366" Margin="10,10,0,0" VerticalAlignment="Top" Width="772">
+            <Button x:Name="Login_Button" Content="Вход" Canvas.Left="331" Canvas.Top="218" Width="114" Command="{Binding LoginButton}" Height="33"/>
+            <Button x:Name="Registration_Button" Content="Регистрация" Canvas.Left="331" Canvas.Top="256" Width="114" Command="{Binding RegistrationButton}" Height="33"/>
+            <TextBox Height="23" Canvas.Left="331" TextWrapping="Wrap" Text="{Binding LoginTextBox}" Canvas.Top="153" Width="114"/>
+            <TextBox Height="23" Canvas.Left="331" TextWrapping="Wrap" Text="{Binding RegisterTextBox}" Canvas.Top="181" Width="114"/>
         </Canvas>
     </Grid>
 </Window>
